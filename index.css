@@ -1,0 +1,17 @@
+*{
+margin:0;
+padding:0;
+
+}
+
+#formen
+{
+margin-left:100px;
+margin-right:100px;
+margin-top:40px;
+border-style:solid;
+border-color:black;
+border-width:5px;
+background-color:darkorchid;
+color:black;
+}
