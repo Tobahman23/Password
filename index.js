@@ -10,27 +10,27 @@ console.log(arr); //Skriver ut arrayen i konsollen
 document.getElementById("b").innerHTML = arr; //Gör om den andra h3 till arrayen
 //klar med första uppgiften här
 
-var use = document.getElementById("user");
+var use = document.getElementById("user"); //skapar variabler för alla inputs
 var ema = document.getElementById("emaill");
 var pas = document.getElementById("pass");
 var repe = document.getElementById("rep");
 var sub = document.getElementById("sube");
-let bol = new Boolean(false);
+let bol = new Boolean(false); //skapar bool
 var che = document.getElementById("chec");
-var com = 0;
+var com = 0; //skapar variabler för att kolla om något blir fel i inmatningen
 var chec = 0;
 var ech = 0;
-if (sub.clicked == true)
+function validera() //huvudfunktionen 
 {
-checkwords(pas);
+checkwords(pas); //anropar funktioner som ska konfirmera ifall allt är korrekt
 checkwords(repe);
 comparing(pas, repe);
 emailcheck(ema);
-if (bol == true && che.checked == true)
+if (bol == true && che.checked == true) //körs ifall inget är fel
 {
-window.location.href="indexus.html";
+location.href= 'indexus.html'; 
 }
-else {
+else { //annars körs denna som kollar vad exakt som är fel och säger till användaren vad som är fel
 if (com = 1)
 {
     document.getElementById("a").innerHTML = "You need to have the same password twice!";
@@ -46,7 +46,7 @@ document.getElementById("a").innerHTML = "You nede to write a correct email adre
 }
 }
 
-function comparing(c, d)
+function comparing(c, d) //funktion för att jämföra lösenord så det repeterade lösenordet är lika
 {
 if (c == d)
 {
@@ -59,9 +59,9 @@ com = 1;
 }
 }
 
-function checkwords(e)
+function checkwords(e) //funktion för att kolla så att lösenordet är mer än 6 karaktärer
 {
-if (e.length >= 6 )
+if (e.length > 6 )
 {
 bol(true);
 }
@@ -71,7 +71,7 @@ else {
 }
 }
 
-function emailcheck(f)
+function emailcheck(f) //kollar ifall ett snabel a finns med i mailen för att validera att det är en mail
 {
 if (f.indexOf('@') == -1)
 {
