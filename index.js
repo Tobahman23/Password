@@ -23,6 +23,7 @@ function validera() //huvudfunktionen
     var pas = document.getElementById("exampleInputPassword1");
     var repe = document.getElementById("exampleInputPassword2");
     const userd = document.getElementById("formGroupExampleInput");
+    comparing(pas.value, repe.value)
 if (bol == false && che.checked == true) //körs ifall inget är fel
 {
 location.href= 'indexus.html'; 
@@ -32,13 +33,12 @@ if (com = 1)
 {
     document.getElementById("a").innerHTML = "You need to have the same password twice and include 6 or more characters!";
 }
-else if (chec = 1)
+else if (che.checked == false)
 {
     document.getElementById("a").innerHTML = "You need to agree to the terms!";
 }
-else if (ech = 1)
-{
-document.getElementById("a").innerHTML = "You need to write a valid email adress!";
+else {
+    console.log("Error");
 }
 }
 }

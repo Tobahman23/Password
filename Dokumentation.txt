@@ -1,0 +1,27 @@
+Först skapade jag index.html som bas sida. Jag gjorde en basic html layout och fixade sedan till h3 elementen och skapade mitt css och js dokument.
+Jag började sedan koda i js filen där jag skapade en array och gjorde en loop för arrayen som slumpade 10 tal. När den har slumpat 10 tal så
+ändras mitt första h3 element till de 10 talen. Efter det så sorteras talen och den andra h3 skrivs om till de 10 nu sorterade talen.
+
+Den andra uppgiften gav mig mycket trubbel. Först skapade jag en form för password och gjorde variabler för dem i javascript sedan gjorde jag mina funktioner 
+som först var emailcheck, compare och checkwords vilket nu bara compare existerar då checkwords blev ihopslagen med compare och emailcheck behövdes inte och funkade inte.
+Efter det fixade jag till min huvudfunktion "validera" som inte har några errors men fortfarande inte funkar. Jag fixade även css och ändrade hemsidan så den skulle se bra
+ut men fick inte js koden att funka så att comparing inte gav ifrån fel värde. Mitt i allt detta när jag försökte fixa koden så slutade även h3 att ändras till
+varningstexten som förklarade vad som var fel eftersom submit knappen refreshade sidan. Jag tror att i slutendan är det som inte funkar min submit och min länkning till en ny sida men jag är inte helt säker på det
+tyvvär hade jag alldeles för många errors från början och fortsatt att skriva koden utan att kolla om saker var fel. 
+
+Med resultatet av att jag inte klara av tvåan så kunde jag inte riktigt hinna med trean då jag var fast på tvåan.
+
+Jag tycker dock jag lyckades rätt bra med ettan och css koden men det var väl inte riktigt målet med denna uppgift jag tror att det kunde gått bättre om jag 
+gjorde mera research och kollade mera efter errors tidigt i mitt kodande istället för att bara fortsätta. 
+
+Mina fördefinerade funktioner/objekt är math, floor, random, innerHTML och document mm.
+
+Mina funktioner jag skapat är tyvvär bara två men det var 4 från början. Mina två funktioner är min huvudfunktion som anropas från formen och min comparing funktion
+som kollar om de två lösenorden är likadana och om lösenordet är tillräckligt starkt. Mina funktion som jag tog bort emailcheck kollade om det fanns ett snabel a i
+inputtet men jag tog bort den när jag märkte att inputten själv redan märkte av när det inte fanns ett snabel a. Funktionen emailcheck använde indexOf för att kolla
+ifall det fanns ett @ i mailen och ändrade boolen beroende på svaret.
+
+Jag använde mig av en while loop i den första uppgiften men impliterade tyvvär inga i den andra uppgiften.
+
+
+
