@@ -10,49 +10,36 @@ console.log(arr); //Skriver ut arrayen i konsollen
 document.getElementById("b").innerHTML = arr; //Gör om den andra h3 till arrayen
 //klar med första uppgiften här
 
- //skapar variabler för alla inputs
-const ema = document.getElementById("exampleInputEmail1");
-const sub = document.getElementById("sube");
-let bol = new Boolean(false); //skapar bool
-const che = document.getElementById("exampleCheck1");
-var com = 0; //skapar variabler för att kolla om något blir fel i inmatningen
-var chec = 0;  //skapar variabler för att kolla om något blir fel i inmatningen 
-var ech = 0; //skapar variabler för att kolla om något blir fel i inmatningen
-function validera() //huvudfunktionen 
+function validera()
 {
-    var pas = document.getElementById("exampleInputPassword1");
-    var repe = document.getElementById("exampleInputPassword2");
-    const userd = document.getElementById("formGroupExampleInput");
-    comparing(pas.value, repe.value)
-if (bol == false && che.checked == true) //körs ifall inget är fel
+var pas = document.getElementById("exampleInputPassword1");
+var repe = document.getElementById("exampleInputPassword2");
+const userd = document.getElementById("formGroupExampleInput");
+var checkbx = document.getElementById("exampleCheck1");
+var ema = document.getElementById("exampleInputEmail1");
+console.log(userd.value);
+if(userd.value == ""){
+    alert("You need to enter the username");
+}
+else if(pas.value != repe.value)
 {
-location.href= 'indexus.html'; 
+alert("You need to repeat the same password");
 }
-else { //annars körs denna som kollar vad exakt som är fel och säger till användaren vad som är fel
-if (com = 1)
+else if(pas.value.length <= 5)
 {
-    document.getElementById("a").innerHTML = "You need to have the same password twice and include 6 or more characters!";
+alert("Your password needs to be 6 or more characters");
 }
-else if (che.checked == false)
+else if (checkbx.checked == false)
 {
-    document.getElementById("a").innerHTML = "You need to agree to the terms!";
+alert("You need to agree to the terms of use");
 }
-else {
-    console.log("Error");
+else if(ema.value.indexOf("@"))
+{
+alert("You need to write a valid email");
 }
-}
+else{
+    window.location.assign("indexus.html");
 }
 
-function comparing(c, d) //funktion för att jämföra lösenord så det repeterade lösenordet är lika
-{
-if (c == d && c.length>=6)
-{
-bol = true;
+return false;
 }
-else 
-{
-bol = false;
-com = 1;
-}
-}
-//tog bort emailchecken i js då den inte funka så bra och jag har en fungerande i html
