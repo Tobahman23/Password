@@ -33,10 +33,6 @@ else if (checkbx.checked == false)
 {
 alert("You need to agree to the terms of use");
 }
-else if(ema.value.indexOf("@"))
-{
-alert("You need to write a valid email");
-}
 else{
     window.location.assign("indexus.html");
 }
